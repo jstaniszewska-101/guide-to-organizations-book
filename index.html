@@ -198,12 +198,12 @@
         The JS below handles submission without page redirect.
       -->
       <form
-        id="book-form"
         action="https://formspree.io/f/xpqvgyab"
         method="POST"
         class="notify-form"
       >
         <input type="hidden" name="_subject" value="New reader — Guide to Organizations" />
+        <input type="hidden" name="_next" value="https://jstaniszewska-101.github.io/guide-to-organizations-book/?subscribed=1" />
         <input
           type="email"
           name="email"
@@ -215,7 +215,7 @@
         <button type="submit">Notify me when available</button>
       </form>
 
-      <div id="form-success" class="form-success" style="display:none;">
+      <div class="form-success" id="form-success" style="display:none;">
         Thank you. I'll be in touch.
       </div>
 
@@ -234,31 +234,11 @@
   </section>
 
   <script>
-    const form = document.getElementById('book-form');
-    if (form) {
-      form.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        const btn = form.querySelector('button');
-        btn.textContent = 'Sending…';
-        btn.disabled = true;
-        try {
-          const resp = await fetch(form.action, {
-            method: 'POST',
-            body: new FormData(form),
-            headers: { 'Accept': 'application/json' }
-          });
-          if (resp.ok) {
-            form.style.display = 'none';
-            document.getElementById('form-success').style.display = 'block';
-          } else {
-            btn.textContent = 'Try again';
-            btn.disabled = false;
-          }
-        } catch(err) {
-          btn.textContent = 'Try again';
-          btn.disabled = false;
-        }
-      });
+    if (window.location.search.includes('subscribed=1')) {
+      var el = document.getElementById('form-success');
+      var form = document.querySelector('.notify-form');
+      if (el) el.style.display = 'block';
+      if (form) form.style.display = 'none';
     }
   </script>
 
