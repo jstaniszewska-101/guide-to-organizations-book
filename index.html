@@ -181,38 +181,86 @@
     </div>
   </section>
 
-  <!-- ——— Early Access — Substack ——— -->
+  <!-- ——— Early Access ——— -->
   <section id="notify">
     <div class="inner notify-inner">
       <p class="section-label">Early Access</p>
       <h2>Be among the first.</h2>
       <p class="notify-body">
-        One free subscription. A preview chapter in your inbox. One message when the book is available.
+        Leave your email below. When the book is available, you'll receive one message — and a preview chapter before that.
       </p>
 
-      <a
-        href="https://joannastaniszewska.substack.com?utm_source=book-page&utm_medium=website&utm_campaign=guide-to-organizations"
-        target="_blank"
-        rel="noopener"
-        class="btn-substack"
+      <!--
+        FORMSPREE FORM
+        To activate: create a free account at formspree.io
+        then replace "joanna@beinginsystems.com" below with your form ID:
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        The JS below handles submission without page redirect.
+      -->
+      <form
+        id="book-form"
+        action="https://formspree.io/joanna@beinginsystems.com"
+        method="POST"
+        class="notify-form"
       >
-        Subscribe free on Substack ↗
-      </a>
+        <input type="hidden" name="_subject" value="New reader — Guide to Organizations" />
+        <input
+          type="email"
+          name="email"
+          placeholder="your@email.com"
+          required
+          autocomplete="email"
+          aria-label="Email address"
+        />
+        <button type="submit">Notify me when available</button>
+      </form>
+
+      <div id="form-success" class="form-success" style="display:none;">
+        Thank you. I'll be in touch.
+      </div>
 
       <p class="notify-note-sub">
-        Free. You can unsubscribe at any time.<br>
-        By subscribing you agree to <a href="privacy-policy.html">our privacy policy</a>
-        and <a href="https://substack.com/privacy" target="_blank" rel="noopener">Substack's privacy policy</a>.
-        Your data is used solely for communication about this book.
+        Your email is used only for communication about this book.<br>
+        See our <a href="privacy-policy.html">Privacy Policy</a> for details.
+        You can unsubscribe at any time.
       </p>
 
-      <div class="substack-direct">
-        <span>Also on</span>
-        <a href="https://www.linkedin.com/in/joannastaniszewska/" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a href="https://medium.com/@j.staniszewska" target="_blank" rel="noopener">Medium ↗</a>
+      <div class="notify-also">
+        <span>Also follow on</span>
+        <a href="https://joannastaniszewska.substack.com?utm_source=book-page" target="_blank" rel="noopener" class="btn-platform">Substack</a>
+        <a href="https://www.linkedin.com/in/joannastaniszewska/" target="_blank" rel="noopener" class="btn-platform">LinkedIn</a>
       </div>
     </div>
   </section>
+
+  <script>
+    const form = document.getElementById('book-form');
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const btn = form.querySelector('button');
+        btn.textContent = 'Sending…';
+        btn.disabled = true;
+        try {
+          const resp = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          });
+          if (resp.ok) {
+            form.style.display = 'none';
+            document.getElementById('form-success').style.display = 'block';
+          } else {
+            btn.textContent = 'Try again';
+            btn.disabled = false;
+          }
+        } catch(err) {
+          btn.textContent = 'Try again';
+          btn.disabled = false;
+        }
+      });
+    }
+  </script>
 
   <!-- ——— Footer ——— -->
   <footer>
