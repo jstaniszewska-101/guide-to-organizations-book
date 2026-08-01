@@ -553,4 +553,74 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
+
+/* ——— Perspective section ——— */
+.perspective-close {
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.preface-sig {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--terra);
+  margin-top: 1.5rem;
+}
+
+/* ——— Chapters section ——— */
+.parts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.part-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--terra);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--terra-light);
+}
+
+.chapter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: chapter-counter attr(start);
+}
+
+.chapter-list li {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--text);
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.chapter-list li::before {
+  content: counter(list-item, decimal-leading-zero);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  min-width: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .parts-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
 }
