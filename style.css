@@ -624,3 +624,291 @@ footer {
 }
 
 }
+
+/* ——— Hero subtitle ——— */
+.hero-subtitle {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--terra);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+
+/* ——— Perspective spacing ——— */
+#perspective h2 {
+  margin-bottom: 2rem;
+}
+
+#perspective .book-body {
+  margin-bottom: 1.4rem;
+  line-height: 1.85;
+}
+
+.perspective-close {
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+.preface-sig {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--terra);
+  margin-top: 1.25rem;
+}
+
+/* ——— Chapters ——— */
+#chapters h2 {
+  margin-bottom: 2.5rem;
+}
+
+.parts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.part-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--terra);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--terra-light);
+  line-height: 1.5;
+}
+
+.chapter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chapter-list li {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  color: var(--text);
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  line-height: 1.4;
+}
+
+.chapter-list li::before {
+  content: counter(list-item, decimal-leading-zero);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.58rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  min-width: 1.5rem;
+  flex-shrink: 0;
+}
+
+/* ——— FAQ ——— */
+#faq {
+  background: var(--cream-alt);
+}
+
+#faq h2 {
+  margin-bottom: 2.5rem;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.faq-item {
+  padding-top: 1rem;
+  border-top: 2px solid var(--terra-light);
+}
+
+.faq-q {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.65rem;
+  line-height: 1.4;
+}
+
+.faq-a {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+}
+
+.press-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+
+.press-link a {
+  color: var(--terra);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ——— Early Access / Substack ——— */
+#notify {
+  background: var(--navy);
+  color: rgba(251,247,242,0.9);
+}
+
+#notify .section-label {
+  color: var(--terra-light);
+}
+
+#notify h2 {
+  color: var(--cream);
+}
+
+.notify-inner {
+  max-width: 560px;
+}
+
+.notify-body {
+  color: rgba(251,247,242,0.75);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.substack-wrap {
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.notify-form {
+  display: flex;
+  gap: 0;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(251,247,242,0.2);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.notify-form input[type="email"] {
+  flex: 1;
+  padding: 0.85rem 1rem;
+  background: rgba(255,255,255,0.06);
+  border: none;
+  color: var(--cream);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.notify-form input[type="email"]::placeholder {
+  color: rgba(251,247,242,0.35);
+}
+
+.notify-form button {
+  padding: 0.85rem 1.5rem;
+  background: var(--terra);
+  color: var(--cream);
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.notify-form button:hover {
+  background: var(--terra-deep);
+}
+
+.consent-label {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  cursor: pointer;
+  margin-bottom: 1.25rem;
+}
+
+.consent-check {
+  margin-top: 0.2rem;
+  accent-color: var(--terra);
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.consent-label span {
+  font-size: 0.8rem;
+  color: rgba(251,247,242,0.6);
+  line-height: 1.6;
+}
+
+.consent-label em {
+  font-style: italic;
+  color: rgba(251,247,242,0.8);
+}
+
+.privacy-line {
+  font-size: 0.72rem;
+  color: rgba(251,247,242,0.4);
+  line-height: 1.6;
+}
+
+.privacy-line a {
+  color: rgba(251,247,242,0.55);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ——— General spacing fixes ——— */
+section {
+  padding: 5rem 3rem;
+}
+
+.book-body {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--text);
+  max-width: 640px;
+  margin-bottom: 1.4rem;
+}
+
+/* ——— Mobile ——— */
+@media (max-width: 680px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .notify-form {
+    flex-direction: column;
+    border: none;
+    gap: 0.5rem;
+  }
+
+  .notify-form input[type="email"] {
+    border: 1px solid rgba(251,247,242,0.2);
+    border-radius: 3px;
+  }
+
+  .notify-form button {
+    border-radius: 3px;
+  }
+
+  .parts-grid {
+    grid-template-columns: 1fr;
+  }
+}
