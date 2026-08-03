@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Guide to Organizations — Joanna Staniszewska</title>
-  <meta name="description" content="A philosophical inquiry into organizational life — from recruitment and strategy to shame, grief, and the search for meaning. By Joanna Staniszewska." />
+  <meta name="description" content="A philosophical inquiry into organizational life — from recruitment and strategy to meaning, courage, and beauty. By Joanna Staniszewska." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -13,7 +13,6 @@
 </head>
 <body>
 
-  <!-- ——— Navigation ——— -->
   <nav>
     <a href="#" class="nav-brand">Guide to Organizations</a>
     <ul class="nav-links">
@@ -36,8 +35,9 @@
         <a href="#notify" class="btn-primary">Get early access</a>
       </div>
       <div class="hero-cover">
-        <img src="book-cover.jpg" alt="Guide to Organizations — book cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-        <div class="cover-placeholder" style="display:none;"><span>book-cover.jpg</span></div>
+        <div class="book-mockup">
+          <img src="book-cover.jpg" alt="Guide to Organizations — book cover" onerror="this.style.display='none';" />
+        </div>
       </div>
     </div>
   </section>
@@ -52,12 +52,12 @@
         This book began in the middle of a meeting, years ago, when I noticed the gap between what was being said and what was actually happening in the room. That gap — between the surface of organizational life and what moves beneath it — is what I have been trying to understand ever since.
       </p>
       <p class="book-body">
-        There are three movements in what follows. The first stays close to the visible world: organizations, structures, strategies, the daily texture of professional life. The second goes inward — into the patterns we rarely have time to examine, the language that shapes what we can imagine. The third is harder to describe. It is less explanation than encounter — with grief, with shame, with courage, with the kind of meaning that doesn't arrive through effort.
+        There are three movements in what follows. The first stays close to the visible world: organizations, structures, strategies, the daily texture of professional life. The second goes inward — into the patterns we rarely have time to examine, the language that shapes what we can imagine. The third is harder to describe. It is encounter more than explanation. I find myself most alive there.
       </p>
       <p class="book-body perspective-close">
-        What I carry from this work is the quality of attention — to the work, to the people, and to the questions that kept returning.
+        What I carry from this work is the quality of attention I was able to bring.
       </p>
-      <p class="preface-sig">— J.S.</p>
+      <p class="preface-sig">&#8212;&thinsp;J.S.</p>
     </div>
   </section>
 
@@ -121,7 +121,7 @@
     </div>
   </section>
 
-  <!-- ——— Author — Two Paths ——— -->
+  <!-- ——— Author ——— -->
   <section id="author">
     <div class="inner">
       <p class="section-label">About the Author</p>
@@ -133,7 +133,7 @@
           <img src="joanna.jpeg" alt="Joanna Staniszewska" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
           <div class="author-photo-placeholder" style="display:none;">joanna.jpeg</div>
         </div>
-        <div>
+        <div class="author-content">
           <div class="two-paths">
             <div class="path-card">
               <p class="path-label">The outer world</p>
@@ -145,8 +145,6 @@
             </div>
           </div>
           <p class="path-aside">Guess which path I'm more drawn to?</p>
-
-          <!-- Social links -->
           <div class="author-socials">
             <a href="https://substack.com/@joannastaniszewska" target="_blank" rel="noopener" class="social-link">Substack</a>
             <a href="https://www.linkedin.com/in/joannastaniszewska/" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
@@ -163,19 +161,23 @@
     <div class="inner">
       <p class="section-label">Questions</p>
       <h2>What to expect.</h2>
-      <div class="faq-grid">
+      <div class="faq-list">
+
         <div class="faq-item">
           <p class="faq-q">When is it available?</p>
           <p class="faq-a">The book is in its final stage. Subscribe below and you'll be first to know — along with a preview chapter sent directly to you.</p>
         </div>
+
         <div class="faq-item">
           <p class="faq-q">Who is this book for?</p>
           <p class="faq-a">For anyone who works inside an organization and senses there is more happening than the surface shows — leaders, consultants, coaches, and people simply paying attention.</p>
         </div>
+
         <div class="faq-item">
           <p class="faq-q">What format?</p>
-          <p class="faq-a">Print and digital. Available in English. A Polish edition is also in preparation.</p>
+          <p class="faq-a">Print and digital. Available in English.</p>
         </div>
+
       </div>
       <p class="press-link">Media or podcast inquiry? <a href="mailto:joanna@beinginsystems.com">Write to Joanna</a></p>
     </div>
@@ -190,28 +192,10 @@
         Leave your email below. When the book is available, you'll receive one message — and a preview chapter before that.
       </p>
 
-      <!--
-        FORMSPREE FORM
-        To activate: create a free account at formspree.io
-        then replace "joanna@beinginsystems.com" below with your form ID:
-        action="https://formspree.io/f/YOUR_FORM_ID"
-        The JS below handles submission without page redirect.
-      -->
-      <form
-        action="https://formspree.io/f/xpqvgyab"
-        method="POST"
-        class="notify-form"
-      >
+      <form action="https://formspree.io/f/xpqvgyab" method="POST" class="notify-form">
         <input type="hidden" name="_subject" value="New reader — Guide to Organizations" />
         <input type="hidden" name="_next" value="https://jstaniszewska-101.github.io/guide-to-organizations-book/?subscribed=1" />
-        <input
-          type="email"
-          name="email"
-          placeholder="your@email.com"
-          required
-          autocomplete="email"
-          aria-label="Email address"
-        />
+        <input type="email" name="email" placeholder="your@email.com" required autocomplete="email" aria-label="Email address" />
         <button type="submit">Notify me when available</button>
       </form>
 
@@ -220,8 +204,8 @@
       </div>
 
       <p class="notify-note-sub">
-        Your email is used only for communication about this book.<br>
-        See our <a href="privacy-policy.html">Privacy Policy</a> for details.
+        Your email is used only for communication about this book.
+        See our <a href="privacy-policy.html">Privacy Policy</a>.
         You can unsubscribe at any time.
       </p>
 
@@ -235,26 +219,33 @@
 
   <script>
     if (window.location.search.includes('subscribed=1')) {
-      var el = document.getElementById('form-success');
-      var form = document.querySelector('.notify-form');
-      if (el) el.style.display = 'block';
-      if (form) form.style.display = 'none';
+      var s = document.getElementById('form-success');
+      var f = document.querySelector('.notify-form');
+      if (s) s.style.display = 'block';
+      if (f) f.style.display = 'none';
     }
   </script>
 
   <!-- ——— Footer ——— -->
   <footer>
     <div class="footer-inner">
-      <p class="footer-copy">&copy; 2026 Joanna Staniszewska</p>
-      <nav class="footer-links">
-        <a href="https://guidetoorganizations.com">guidetoorganizations.com</a>
-        <a href="https://substack.com/@joannastaniszewska" target="_blank" rel="noopener">Substack</a>
-        <a href="https://www.linkedin.com/in/joannastaniszewska/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://medium.com/@j.staniszewska" target="_blank" rel="noopener">Medium</a>
-        <a href="https://app.inspo.expert/id/joanna?userID=752" target="_blank" rel="noopener">INSPO</a>
-        <a href="mailto:joanna@beinginsystems.com">joanna@beinginsystems.com</a>
-        <a href="privacy-policy.html">Privacy Policy</a>
-      </nav>
+      <div class="footer-left">
+        <p class="footer-title">Guide to Organizations</p>
+        <p class="footer-copy">&copy; 2026 Joanna Staniszewska</p>
+      </div>
+      <div class="footer-right">
+        <nav class="footer-social" aria-label="Social links">
+          <a href="https://substack.com/@joannastaniszewska" target="_blank" rel="noopener">Substack</a>
+          <a href="https://www.linkedin.com/in/joannastaniszewska/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://medium.com/@j.staniszewska" target="_blank" rel="noopener">Medium</a>
+          <a href="https://app.inspo.expert/id/joanna?userID=752" target="_blank" rel="noopener">INSPO</a>
+        </nav>
+        <nav class="footer-legal" aria-label="Legal links">
+          <a href="https://guidetoorganizations.com">guidetoorganizations.com</a>
+          <a href="mailto:joanna@beinginsystems.com">joanna@beinginsystems.com</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </nav>
+      </div>
     </div>
   </footer>
 
