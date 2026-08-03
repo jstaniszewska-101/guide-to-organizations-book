@@ -32,7 +32,7 @@ body {
 }
 
 /* ——— Navigation ——— */
-nav {
+body > nav {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -46,7 +46,7 @@ nav {
   align-items: center;
 }
 
-.nav-brand {
+body > nav .nav-brand {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.1rem;
   font-weight: 500;
@@ -55,13 +55,13 @@ nav {
   text-decoration: none;
 }
 
-.nav-links {
+body > nav .nav-links {
   display: flex;
   gap: 2rem;
   list-style: none;
 }
 
-.nav-links a {
+body > nav .nav-links a {
   font-family: 'Inter', sans-serif;
   font-size: 0.78rem;
   font-weight: 500;
@@ -72,7 +72,7 @@ nav {
   transition: color 0.2s;
 }
 
-.nav-links a:hover { color: var(--terra); }
+body > nav .nav-links a:hover { color: var(--terra); }
 
 /* ——— Shared ——— */
 section { padding: 5rem 3rem; }
@@ -650,6 +650,7 @@ footer {
 
 .footer-social,
 .footer-legal {
+  background: transparent;
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
