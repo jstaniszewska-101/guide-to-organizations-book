@@ -512,7 +512,13 @@ h1, h2, h3 {
 
 .notify-form {
   display: flex;
+  flex-direction: column;
+  gap: 0;
   margin-bottom: 1rem;
+}
+
+.notify-form-row {
+  display: flex;
   border: 1px solid var(--border);
   border-radius: 3px;
   overflow: hidden;
@@ -727,7 +733,7 @@ footer {
   .footer-right { align-items: flex-start; }
   .footer-social, .footer-legal { justify-content: flex-start; gap: 1rem; }
 
-  .notify-form { flex-direction: column; border: none; gap: 0.5rem; }
+  .notify-form-row { flex-direction: column; border: none; gap: 0.5rem; }
   .notify-form input[type="email"] { border: 1px solid var(--border); border-radius: 3px; }
   .notify-form button { border-radius: 3px; }
 }
