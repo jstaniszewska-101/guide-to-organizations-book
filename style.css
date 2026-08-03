@@ -5,8 +5,6 @@
    Palette: Cream #FBF7F2 · Terra #B8521A · Navy #1C2B4A
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
-
 :root {
   --max-w:       860px;
   --cream:       #FBF7F2;
@@ -611,8 +609,9 @@ h1, h2, h3 {
 
 /* ——— Footer ——— */
 footer {
-  background: var(--navy);
-  color: var(--cream);
+  background: var(--navy, #1C2B4A);
+  background-color: #1C2B4A;
+  color: #FBF7F2;
   padding: 3rem;
 }
 
@@ -623,6 +622,7 @@ footer {
   grid-template-columns: 1fr auto;
   gap: 3rem;
   align-items: start;
+  background: #1C2B4A;
 }
 
 .footer-title {
