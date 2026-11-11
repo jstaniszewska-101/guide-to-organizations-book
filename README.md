@@ -7,7 +7,7 @@ Landing page for *Living in Organizations: How I Recovered My Heart and Soul* by
 ## Files
 - `index.html`, `style.css`: single-page site, no build step.
 - `fonts/`: self-hosted Cormorant Garamond and Inter (latin and latin-ext). No request goes to Google, so no cookie banner is needed.
-- `preview-chapter.pdf`: title page, copyright page and Chapter 1, taken from the print interior.
+- `Living-in-Organizations-Preview-Chapter-1.pdf`: title page, copyright page and Chapter 1, taken from the print interior.
 - `og-image.jpg`: 1200 x 630 share image (LinkedIn, Facebook, X).
 - `book-cover.jpg`, `joanna.jpeg`, `favicon.svg`.
 - `privacy-policy.html`, `robots.txt`, `sitemap.xml`, `CNAME`.
