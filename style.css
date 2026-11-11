@@ -1,5 +1,5 @@
 /* ============================================
-   GUIDE TO ORGANIZATIONS
+   LIVING IN ORGANIZATIONS
    Book Landing Page — Joanna Staniszewska
    Typography: Cormorant Garamond (serif) + Inter (sans)
    Palette: Cream #FBF7F2 · Terra #B8521A · Navy #1C2B4A
@@ -757,3 +757,11 @@ footer {
   border: none;
 }
 @media (max-width: 640px) { .pull-quote { font-size: 1.3rem; } }
+
+/* ---- additions 2026-11-11 ---- */
+.hero-notify { display: block; margin: 1.1rem 0 0 0; font-size: 0.85rem; color: var(--terra-deep); text-decoration: underline; text-underline-offset: 3px; }
+.hero-notify:hover { color: var(--terra); }
+.preview-cta { margin: 1.6rem 0 2rem; }
+.author-more { margin-top: 2.2rem; padding-top: 1.8rem; border-top: 1px solid var(--border); }
+.author-more p { font-size: 0.95rem; line-height: 1.8; color: var(--text-muted); margin-bottom: 0.9rem; }
+.author-more .path-label { margin-bottom: 0.8rem; }

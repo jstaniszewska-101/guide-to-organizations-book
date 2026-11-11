@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://guidetoorganizations.pub/sitemap.xml

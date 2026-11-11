@@ -1,30 +1,18 @@
-# A Philosophical Guide to Organizations
+# Living in Organizations: book page
 
-Book landing page for *A Philosophical Guide to Organizations* by Joanna Staniszewska.
+Landing page for *Living in Organizations: How I Recovered My Heart and Soul* by Joanna Staniszewska (Guide to Organizations Press).
 
-**Live site:** https://jstaniszewska-101.github.io/guide-to-organizations-book/
+**Live site:** https://guidetoorganizations.pub
 
-## Setup
+## Files
+- `index.html`, `style.css`: single-page site, no build step.
+- `fonts/`: self-hosted Cormorant Garamond and Inter (latin and latin-ext). No request goes to Google, so no cookie banner is needed.
+- `preview-chapter.pdf`: title page, copyright page and Chapter 1, taken from the print interior.
+- `og-image.jpg`: 1200 x 630 share image (LinkedIn, Facebook, X).
+- `book-cover.jpg`, `joanna.jpeg`, `favicon.svg`.
+- `privacy-policy.html`, `robots.txt`, `sitemap.xml`, `CNAME`.
 
-Single-page static site — pure HTML + CSS, no build step required.
-
-### To add images
-
-- `book-cover.jpg` — place the book cover image in the root directory
-- `joanna.jpeg` — place the author photo in the root directory
-
-Both images degrade gracefully with a placeholder if missing.
-
-### To activate the email form
-
-In `index.html`, find the `<form>` element in the `#notify` section and replace `action="#"` with your Buttondown or Mailchimp endpoint URL, and set `method="post"`.
-
-## Structure
-
-```
-index.html   — single-page site
-style.css    — all styles
-README.md    — this file
-book-cover.jpg  — (add manually)
-joanna.jpeg     — (add manually)
-```
+## Checklist when the launch date changes
+- hero label ("Live ..."), FAQ answer "When is it available?", form wording ("Notify me when live").
+- add store links and ISBN (paperback 978-83-983009-0-2, eBook 978-83-983009-1-9) and `datePublished` in the JSON-LD block of `index.html`.
+- GitHub Pages setting: Enforce HTTPS must be on.
