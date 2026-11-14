@@ -767,3 +767,8 @@ footer {
 .author-more .path-label { margin-bottom: 0.8rem; }
 
 .hero-live { margin: 1.4rem 0 0 0; font-size: 0.82rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--terra-deep); font-weight: 500; }
+
+/* launch update 2026-11-14 */
+.hero-preview { margin: 1rem 0 0 0; font-size: 0.9rem; }
+.hero-preview a { color: inherit; text-decoration: underline; }
+.author-amazon { margin: 1.4rem 0 0.4rem 0; }
